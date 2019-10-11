@@ -1,0 +1,10 @@
+{
+	"eventMarkersDefault": {
+		"bgGraphics": {"fillColor": "0x57350e"},
+		"touchSpot": {"width": 36, "height": 15, "yOffset": 45},
+		"textFormat": {"font": "Arial", "size": "12px", "fillColor": "#cccc99", "bgColor": "#57350e"},
+		"arrow": {"height": 45, "width": 34},
+		"extension": {"height": 5},
+		"yearText": {"yOffset": 45}
+	}
+}

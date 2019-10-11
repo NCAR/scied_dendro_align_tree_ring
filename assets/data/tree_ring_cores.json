@@ -1,0 +1,21 @@
+{
+	"treeCoresUSA": {
+		"sTempMap": "USA_1",
+		"aRingColors": ["0x754200", "0x9e6b00", "0xb58200", "0xcc9901", "0xd3a51b", "0xd9af33", "0xdfba4c", "0xe5c566", "0xecd07e", "0xf2db97", "0xf8e6b1", "0xfef1c9"],
+		"aTreeRingCores": [
+			{"x": 470, "y": 430, "aYearRange": [1970, 2017]},
+			{"x": 400, "y": 460, "aYearRange": [1940, 1990]},
+			{"x": 350, "y": 490, "aYearRange": [1920, 1960]}
+		]
+	},
+	"treeCoresUK": {
+		"sTempMap": "UK_1",
+		"aRingColors": ["0x895600", "0xae7b00", "0xcd9c06", "0xd7ac2c", "0xe1bd53", "0xeace79", "0xf4de9e", "0xfdefc4"],
+		"aTreeRingCores": [
+			{"x": 300, "y": 410, "aYearRange": [1940, 2017]},
+			{"x": 250, "y": 440, "aYearRange": [1870, 1950]},
+			{"x": 200, "y": 470, "aYearRange": [1800, 1880]},
+			{"x": 150, "y": 500, "aYearRange": [1730, 1810]}
+		]
+	}
+}

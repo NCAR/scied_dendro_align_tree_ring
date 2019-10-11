@@ -1,0 +1,52 @@
+{
+	"slideShowUSA": {
+		"textFormat": {"font": "Arial", "size": "30px", "fillColor": "#57350e"},
+		"aSlides": [
+			{
+				"image": "treeRingsPhotoLightDark",
+				"textWidth": 500,
+				"text": "As a tree grows older, its trunk grows larger in diameter.\nEach year, the tree grows a pair of rings: a light-colored ring, which forms as the tree grows quickly in the spring and early summer, and a dark-colored ring, which forms as the tree grows more slowly in the late summer and fall.\n\nNotice the light and dark rings in the photo to the left."
+			}, 
+			{
+				"image": "treeRingsPhotoCloser",
+				"textWidth": 500,
+				"text": "During years when growing conditions are good, when there is plenty of water and the temperature is warm but not too hot, trees form wider rings. If growing conditions are not as good, for example when it is dry or especially cool, trees grow thinner rings.\n\nScientists use the widths of a tree's rings to reveal the climate conditions during the tree's life."
+			}, 
+			{
+				"image": "borerCoreSample",
+				"textWidth": 500,
+				"text": "Did you know that scientists can look at tree ring patterns without cutting down a tree? They use a core sampling tool to take a long, thin sample of wood from the trunk of the tree.\n\nThe stripes along this pencil-sized core sample of wood are the pattern of wide and narrow tree rings. By decoding this pattern of stripes, scientists learn about the climate during the tree’s life."
+			}, 
+			{
+				"image": "bristleconeAlignedCores",
+				"textWidth": 500,
+				"text": "Scientists collect core samples from wood of different ages: live trees, logs from trees that died a while ago, and older wood used in buildings like log cabins.\n\nIf the years that these different trees lived overlap at least a bit, it is possible to align the core samples to build up a climate record that is longer than the lifespan of any single tree."
+			}
+		]
+	},
+	"slideShowUK": {
+		"textFormat": {"font": "Arial", "size": "30px", "fillColor": "#57350e"},
+		"aSlides": [
+			{
+				"image": "treeRingsPhotoLightDark",
+				"textWidth": 500,
+				"text": "As a tree grows older, its trunk grows larger in diameter.\nEach year, the tree grows a pair of rings: a light-coloured ring, which forms as the tree grows quickly in the spring and early summer, and a dark-coloured ring, which forms as the tree grows more slowly in the late summer and autumn.\n\nNotice the light and dark rings in the photo to the left."
+			}, 
+			{
+				"image": "treeRingsPhotoCloser",
+				"textWidth": 500,
+				"text": "During years when growing conditions are good, when there is plenty of water and the temperature is warm but not too hot, trees form wider rings. If growing conditions are not as good, for example when it is dry or especially cool, trees grow thinner rings.\n\nScientists use the widths of a tree's rings to reveal the climate conditions during the tree's life."
+			}, 
+			{
+				"image": "borerCoreSample",
+				"textWidth": 500,
+				"text": "Did you know that scientists can look at tree ring patterns without cutting down a tree? They use a core sampling tool to take a long, thin sample of wood from the trunk of the tree.\n\nThe stripes along this pencil-sized core sample of wood are the pattern of wide and narrow tree rings. By decoding this pattern of stripes, scientists learn about the climate during the tree’s life."
+			}, 
+			{
+				"image": "bristleconeAlignedCores",
+				"textWidth": 500,
+				"text": "Scientists collect core samples from wood of different ages: live trees, logs from trees that died a while ago, and still older wood used in buildings.\n\nIf the years that these different trees lived overlap at least a bit, it is possible to align the core samples to build up a climate record that is longer than the lifespan of any single tree."
+			}
+		]
+	}
+}

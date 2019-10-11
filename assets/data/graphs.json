@@ -1,0 +1,24 @@
+{
+	"yearTempUSA": {
+		"paper": {"color":"0xeeeeee", "size":[880, 370]},
+		"margins": {"left": 45, "top": 10, "right": 10, "bottom": 50},
+		"axes":{
+			"year":{"title":"Year", "orientation":"horizontal", "color":"0x000000", "textColor":"#000000", "units":"years", "valuesRange": [1920, 2020], "tickInterval": 10, "tickLength": 10}, 
+			"temperature":{"title":"Temperature (degrees Celsius)", "orientation":"vertical", "color":"0x993333", "textColor":"#660000", "units":"Celsius", "valuesRange": [13, 18], "tickInterval": 1, "tickLength":10}
+		},
+		"bars": {"color":"0x993333", "width":3},
+		"temperatureRange": {"min": 13, "max": 18},
+		"yearRange": {"min": 1920, "max": 2017}
+	},
+	"yearTempUK": {
+		"paper": {"color":"0xeeeeee", "size":[1730, 300]},
+		"margins": {"left": 45, "top": 10, "right": 10, "bottom": 45},
+		"axes":{
+			"year":{"title":"Year", "orientation":"horizontal", "color":"0x000000", "textColor":"#000000", "units":"years", "valuesRange": [1730, 2018], "tickInterval": 10, "tickLength": 10}, 
+			"temperature":{"title":"Temperature (degrees Celsius)", "orientation":"vertical", "color":"0x993333", "textColor":"#660000", "units":"Celsius", "valuesRange": [13, 18], "tickInterval": 1, "tickLength":10}
+		},
+		"bars": {"color":"0x993333", "width":3},
+		"temperatureRange": {"min": 13, "max": 18},
+		"yearRange": {"min": 1730, "max": 2017}
+	}
+}

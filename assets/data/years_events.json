@@ -1,0 +1,26 @@
+{
+	"yearsEventsUSA": [
+		{"year": 1992, "type": "volcanic", "description": "Pinatubo erupted"},
+		{"year": 1982, "type": "volcanic", "description": "El Chichon erupted"},
+		{"year": 1963, "type": "volcanic", "description": "Agung erupted"},
+		{"year": 1934, "type": "historical", "description": "Dust Bowl"}
+	],
+	"yearsEventsUK": [
+		{"year": 2003, "type": "historical", "description": "European summer heatwave"},
+		{"year": 1992, "type": "volcanic", "description": "Pinatubo erupted"},
+		{"year": 1982, "type": "volcanic", "description": "El Chichon erupted"},
+		{"year": 1976, "type": "historical", "description": "Summer heat wave and drought"},
+		{"year": 1963, "type": "volcanic", "description": "Agung erupted"},
+		{"year": 1947, "type": "historical", "description": "Cold winter"},
+		{"year": 1883, "type": "volcanic", "description": "Krakatau erupted"},
+		{"year": 1860, "type": "historical", "description": "Internal combustion engine"},
+		{"year": 1850, "type": "historical", "description": "End of Little Ice Age"},
+		{"year": 1845, "type": "historical", "description": "Potato famine in Ireland"},
+		{"year": 1816, "type": "historical", "description": "The Year With No Summer"},
+		{"year": 1795, "type": "historical", "description": "Frost Fair"},
+		{"year": 1788, "type": "historical", "description": "Frost Fair"},
+		{"year": 1783, "type": "historical", "description": "Laki fissure erupted"},
+		{"year": 1776, "type": "historical", "description": "Frost Fair"},
+		{"year": 1740, "type": "historical", "description": "Frost Fair, Famine"}
+	]
+}

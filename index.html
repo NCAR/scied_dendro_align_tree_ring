@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" sizes="196x196" href="assets/images/tree_rings_icon_196x196.jpg">
+	  <title>Dendrochronology Interactive - Align Tree Ring Cores</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/2.4.6/phaser.min.js"></script>
+    <script src="js/Boot.js"></script>
+    <script src="js/Preloader.js"></script>
+    <script src="js/StartMenu.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/GameLevel.js"></script>
+    <script src="js/GameLevel_91.js"></script>
+    <script src="js/GameLevel_92.js"></script>
+    <script src="js/GameLevel_93.js"></script>
+    <script src="js/GameLevel_95.js"></script>
+    <script src="js/ReplayMenu.js"></script>
+
+    <script src="js/UK_intro.js"></script>
+    <script src="js/UK_collect_samples.js"></script>
+    <script src="js/UK_align_cores.js"></script>
+
+    <script src="js/USA_intro.js"></script>
+    <script src="js/USA_collect_samples.js"></script>
+    <script src="js/USA_align_cores.js"></script>
+
+    <script src="js/SlideShow.js"></script>
+
+    <script src="js/TreeRingCore.js"></script>
+    <script src="js/CoreSampleCarrierGroup.js"></script>
+    <script src="js/TreeRingCoreSample.js"></script>
+
+    <script src="js/EventMarkerGroup.js"></script>
+    <script src="js/EventMarker.js"></script>
+
+    <!-- Shared Code across HTML5 interactives for Credits and Help dialog boxes  -->
+    <!-- Web version -->
+    <script src="../shared/javascript/DialogBox.js"></script>
+    <script src="../shared/javascript/DialogBox2.js"></script>
+    <script src="../shared/javascript/HelpDialog.js"></script>
+    <script src="../shared/javascript/CreditsDialog.js"></script>
+    <script src="../shared/javascript/SimpleDialog.js"></script>
+    <!-- Local version -->
+    <!-- <script src="../../../shared_code/html_5/DialogBox.js"></script>
+    <script src="../../../shared_code/html_5/HelpDialog.js"></script>
+    <script src="../../../shared_code/html_5/CreditsDialog.js"></script>  -->
+
+	<!-- Code for Graphing  -->
+    <!-- Web version -->
+    <script src="js/TreeGraph.js"></script>
+    <script src="js/GraphPaper.js"></script>
+    <script src="js/GraphAxis.js"></script>
+    <!-- <script src="js/GraphLayer.js"></script>  -->
+    <!-- Local version -->
+    <!-- <script src="../../../shared_code/html_5/graph/FlyGraph.js"></script>  -->
+
+
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			background-color: #ffffff;
+		}
+	</style>
+</head>
+
+<body>
+    <div id="gameContainer"></div>
+    <script type="text/javascript">
+		window.onload = function(){
+			// new Game(width, height, renderer, parent, state, transparent, antialias, physicsConfig)
+			// http://phaser.io/docs/2.4.2/Phaser.Game.html
+			var game = new Phaser.Game(900, 600, Phaser.AUTO, 'gameContainer');
+
+			game.score = 0;
+
+			// The State Manager is responsible for loading, setting up and switching game states.
+			// http://phaser.io/docs/2.4.2/Phaser.StateManager.html#add
+			game.state.add('Boot', Dendrochronology.Boot);
+			game.state.add('Preloader', Dendrochronology.Preloader);
+			game.state.add('StartMenu', Dendrochronology.StartMenu);
+
+			game.state.add('GameLevel_1', Dendrochronology.UK_intro);
+			game.state.add('GameLevel_2', Dendrochronology.UK_collect_samples);
+			game.state.add('GameLevel_3', Dendrochronology.UK_align_cores);
+
+			game.state.add('GameLevel_21', Dendrochronology.USA_intro);
+			game.state.add('GameLevel_22', Dendrochronology.USA_collect_samples);
+			game.state.add('GameLevel_23', Dendrochronology.USA_align_cores);
+
+			game.state.add('GameLevel_91', Dendrochronology.GameLevel_91);
+			game.state.add('GameLevel_92', Dendrochronology.GameLevel_92);
+			game.state.add('GameLevel_93', Dendrochronology.GameLevel_93);
+			game.state.add('GameLevel_95', Dendrochronology.GameLevel_95);
+			game.state.add('ReplayMenu', Dendrochronology.ReplayMenu);
+			game.state.start('Boot');
+		}
+    </script>
+</body>
+</html>
