@@ -12,25 +12,26 @@ Dendrochronology.USA_intro.prototype.create = function() {
 	this.buildLevel();
 };
 
-Dendrochronology.USA_intro.prototype.buildLevel = function() { 
+Dendrochronology.USA_intro.prototype.buildLevel = function() {
 	// Button to move forward to the next screen/level (Skip Intro)
 	var xLoc = this.game.width - 260;
 	var yLoc = this.game.height - 60;
 	this._forwardBtn = this.add.button(xLoc, yLoc, 'skip_intro_btn_spritesheet', this._goForward, this, 1, 0, 2, 0);
     this._forwardBtn.name = 'forwardButton';
-	
-	
+
+
 	// Button to move forward to the next screen/level (Continue)
 	this._continueBtn = this.add.button(xLoc, yLoc, 'continue_btn_spritesheet', this._goForward, this, 1, 0, 2, 0);
     this._continueBtn.name = 'continueButton';
 	this._continueBtn.visible = false;
-	
+
 	this._initSlideShow();
 };
 
 Dendrochronology.USA_intro.prototype.preload = function () {
     // load the JSON data file with formatting for the Slide Show
     this._slideShowData = this.cache.getJSON('slideShowData');
+		this._dialog = this.cache.getJSON('dialog');
 };
 
 Dendrochronology.USA_intro.prototype._initSlideShow = function () {

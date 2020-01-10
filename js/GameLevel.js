@@ -3,7 +3,7 @@
 GameLevel = function(currentGameLevel, sBgImage, helpDialogSize) {
     this._currentLevel = currentGameLevel;
     this._sBgImage = sBgImage;
-	
+
     this._quitBtn;
     this._helpBtn;
 	this._helpDialogBox;
@@ -16,7 +16,7 @@ GameLevel = function(currentGameLevel, sBgImage, helpDialogSize) {
 GameLevel.prototype.create = function() {
 	var bgImage = this.add.image(0, 0, this._sBgImage);
 	bgImage.alpha = 0.3;
-	
+
 	this._initHelp();
 	this._initCredits();
 	//this._initQuitLevel();
@@ -76,16 +76,20 @@ GameLevel.prototype._initHelp = function() {
 	var yLoc = this.game.height - 60;
 	this._helpBtn = this.add.button(xLoc, yLoc, 'help_btn_spritesheet', this._toggleHelp, this, 2, 1, 0);
 	this._helpBtn.name = 'helpBtn';
-	
+
 	// Help dialog box
-	this._helpDialogBox = new HelpDialog(this, this._helpDialogSize);
+  var txt = '';
+  if(this._dialog){
+    txt = this._dialog['level'+this._currentLevel];
+  }
+	this._helpDialogBox = new HelpDialog(this, this._helpDialogSize, txt);
 	this._helpDialogBox.visible = false;
 };
 
 GameLevel.prototype._toggleHelp = function(pointer) {
 	this._creditsDialogBox.visible = false;
 	this.world.bringToTop(this._helpDialogBox);
-	
+
     if (this._helpDialogBox.visible) {
 		this._helpDialogBox.visible = false;
 	} else {
@@ -137,20 +141,27 @@ GameLevel.prototype._initCredits = function() {
 	var yLoc = this._helpBtn.y;
 	this._creditsBtn = this.add.button(xLoc, yLoc, 'credits_btn_spritesheet', this._toggleCredits, this, 2, 1, 0);
 	this._creditsBtn.name = 'creditsBtn';
-	
+
 	// Credits dialog box
 	var size = {width:800, height:450};
-	this._creditsDialogBox = new CreditsDialog(this, size);
+  var txt = '';
+  if(this._dialog){
+    txt = this._dialog['credits'];
+  }
+	this._creditsDialogBox = new CreditsDialog(this, size, txt);
 	this._creditsDialogBox.visible = false;
 };
 
 GameLevel.prototype._toggleCredits = function(pointer) {
 	this._helpDialogBox.visible = false;
 	this.world.bringToTop(this._creditsDialogBox);
-	
+
 	if (this._creditsDialogBox.visible) {
 		this._creditsDialogBox.visible = false;
 	} else {
 		this._creditsDialogBox.visible = true;
 	}
+};
+GameLevel.prototype.closeDialog = function() {
+
 };
